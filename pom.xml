@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.anthunt</groupId>
+	<artifactId>awssdk-core-profile</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+  
+  	<name>awssdk-core-profile</name>
+  
+  	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <poi.version>3.14</poi.version>
+    </properties>
+    
+	<distributionManagement>
+	   <repository>
+	     <id>github</id>
+	     <name>GitHub OWNER Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/anthunt/awssdk-core-profile</url>
+	   </repository>
+	</distributionManagement>
+	
+  	<dependencies>
+  	
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core -->
+	  	<dependency>
+	    	<groupId>com.amazonaws</groupId>
+	    	<artifactId>aws-java-sdk-core</artifactId>
+	    	<version>1.11.620</version>
+	  	</dependency>
+			
+  	</dependencies>
+  	
+  	
+    <build>
+    
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+		
+    </build>
+    
+</project>
