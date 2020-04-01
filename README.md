@@ -1,4 +1,7 @@
 # awssdk-core-profile
+
+[![Build Status](https://travis-ci.org/anthunt/awssdk-core-profile.svg?branch=master)](https://travis-ci.org/anthunt/awssdk-core-profile)
+
 aws java sdk plugin for merged profile with config file
 >Extension Project for Java AWS sdk.
 The ProfileCredentialsProvider Class provided by the AWS JAVA SDK recognizes only the ~/.aws/credentials setting to provide Credentials.
